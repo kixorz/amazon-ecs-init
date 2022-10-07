@@ -120,6 +120,8 @@ else ifeq (${ARCH},aarch64)
 # osx M1 instances
 else ifeq (${ARCH},arm64)
 	AGENT_FILENAME=ecs-agent-arm64-v${VERSION}.tar
+else ifeq (${ARCH},armv7l)
+	AGENT_FILENAME=ecs-agent-arm-v${VERSION}.tar
 endif
 
 BUILDROOT/ecs-agent.tar:
